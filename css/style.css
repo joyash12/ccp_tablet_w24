@@ -1,0 +1,241 @@
+.food-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+.food-grid img {
+    width: 100%;
+}
+
+.recipe {
+    background-color: rgb(200, 208, 175);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.bacon-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+.bacon-photos img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.skiptomain {
+    position: fixed;
+    top: 150px;
+    left: 300px;
+    background-color: olive;
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid slategray;
+    padding: 20px 20px;
+    opacity: 0;
+}
+
+.skiptomain:focus {
+    opacity: 1;
+}
+
+.toc-list, .toc-list ol {
+    list-style-type: none;
+}
+.toc-list {
+    padding: 10px;
+}
+.toc-list ol {
+    padding-inline-start: 2ch;
+}
+.title {
+    background-color: lightgray;
+    color: darkolivegreen;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+body {
+    margin: 5%;
+    background-color: beige;
+}
+
+.header {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: darkolivegreen;
+    color: beige;
+    font-size: 20px;
+    border: slategray solid 2px;
+    border-radius: 20px;
+
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    from {background-color: darkolivegreen;}
+    to {background-color: darkslategrey;}
+  }
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1em;
+    margin-top: 3em;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 1em; 
+}
+
+.travel {
+    padding: 20px;
+    border: solid 10px slategray;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 18px; 
+    margin: 5px;
+    margin-top: 20px;
+}
+
+h3 span {
+    background-color: rgb(183, 194, 204);
+    padding: 5px;
+}
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    list-style-type: circle;
+}
+ol li {
+    list-style-type: decimal;
+}
+
+img {
+    display: inline-block;
+    width: 40%;
+    margin: 5px;
+    border: darkolivegreen solid 5px;
+    border-radius: 5px;
+}
+
+video {
+    display: inline-block;
+    width: 15em;
+    margin: 5px;
+    border: darkolivegreen solid 5px;
+    border-radius: 5px;
+}
+
+.home img {
+    display: inline-block;
+    width: 15em;
+    border-color: olive;
+    border-width: 8px;
+    border-style: double;
+}
+
+.home img:hover {
+    box-shadow: 0 0 10px #376F70;
+}
+:focus {
+    box-shadow: 0 0 10px #376F70;
+}
+
+#homegal {
+    color: #376F70;
+}
+.pet {
+    padding: 20px;
+    border: slategray dashed 1px;
+    background-color: burlywood;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* Navigation Bar */
+nav ul li{
+    display: inline;
+	margin: 0;
+    padding: 0;
+	width: 25%;
+	border: 1px solid #bbb;
+	width: 20%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: darkolivegreen;
+  }
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+  
+    /* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: darkkhaki;
+}
+
+.active {
+    background-color: darkslategray;
+    text-decoration: underline;
+} 
+@media screen and (min-width: 800px) {
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    figcaption {
+        font-size: 16px;
+    }
+    .skiptomain {
+        top: 100px;
+        left: 600px;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .animation {
+        display: none;
+    }
+}
